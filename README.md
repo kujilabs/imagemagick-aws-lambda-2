@@ -1,8 +1,8 @@
 # ImageMagick for AWS Lambda
 
-Scripts to compile ImageMagick utilities for AWS Lambda instances powered by Amazon Linux 2.x, such as the `nodejs10.x` or `nodejs12.x` or `python 3.8` runtime, and the updated 2018.03 Amazon Linux 1 runtimes. 
+Scripts to compile ImageMagick utilities for AWS Lambda instances powered by Amazon Linux 2.x, such as the `ruby3.3` or `ruby3.2` or `ruby2.7` runtime, and the updated 2018.03 Amazon Linux 1 runtimes.
 
-Amazon Linux 2 instances for Lambda no longer contain system utilities, so `convert`, `mogrify` and `identify` from the [ImageMagick](https://imagemagick.org) package are no longer available. 
+Amazon Linux 2 instances for Lambda no longer contain system utilities, so `convert`, `mogrify` and `identify` from the [ImageMagick](https://imagemagick.org) package are no longer available.
 
 ## Usage
 
@@ -26,7 +26,7 @@ For manual deployments and custom builds, read below...
 There are two `make` scripts in this project.
 
 * [`Makefile`](Makefile) is intended to run on the build system, and just starts a Docker container matching the AWS Linux 2 environment for Lambda runtimes to compile ImageMagick using the second script.
-* [`Makefile_ImageMagick`](Makefile_ImageMagick) is the script that will run inside the container, and actually compile binaries. 
+* [`Makefile_ImageMagick`](Makefile_ImageMagick) is the script that will run inside the container, and actually compile binaries.
 
 The output will be in the `result` dir.
 

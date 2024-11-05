@@ -16,6 +16,8 @@ Resources:
       ContentUri: build/layer.zip
       CompatibleRuntimes:
         - ruby2.7
+        - ruby3.2
+        - ruby3.3
       LicenseInfo: https://imagemagick.org/script/license.php
       RetentionPolicy: Retain
 
@@ -29,14 +31,14 @@ Metadata:
     Name: image-magick-lambda-layer
     Description: >
       Static build of ImageMagick for Amazon Linux 2,
-      packaged as a Lambda layer. Bundles ImageMagick 7.0.8-45.
+      packaged as a Lambda layer. Bundles ImageMagick 7.1.0-51.
 
       Including convert, mogrify and identify tools
       and support for jpeg, gif, png, tiff and webm formats.
     Author: Gojko Adzic
     SpdxLicenseId: ImageMagick
     LicenseUrl: LICENSE.txt
-    ReadmeUrl: README-SAR.md 
+    ReadmeUrl: README-SAR.md
     Labels: ['layer', 'image', 'lambda', 'imagemagick']
     HomePageUrl: https://github.com/serverlesspub/imagemagick-aws-lambda-2
     SemanticVersion: 1.0.0
